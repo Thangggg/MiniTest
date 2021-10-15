@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+
+ Nhập số a: <input type="text" id="t1">
+ Nhập số b: <input type="text" id="t2">
+    <input type="button" onclick="checkForm()" value="Tính">
+    <h1 id="t3"></h1>
+
+</form>
+</body>
+<script>
+    function checkForm(){
+    let number = document.getElementById('t1').value;
+    let number2 = document.getElementById('t2').value;
+    let result = number*number2
+    document.getElementById('t3').innerHTML = "Kết quả là " + result
+    }
+</script>
+</html>

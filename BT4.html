@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập vào a: <input type="text" id="t1">
+<input type="button" onclick="checkForm()" value="Click">
+<p id="t2"></p>
+<p id="t3"></p>
+</body>
+<script>
+    function checkForm() {
+        let number = document.getElementById('t1').value;
+        let chuVi = number*4
+        let dienTich = number**2
+        document.getElementById('t2').innerHTML = "Chu vi hình vuông là : " + chuVi
+        document.getElementById('t3').innerHTML = " Diện tích hình vuông là : " + dienTich
+    }
+</script>
+</html>
